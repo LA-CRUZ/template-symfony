@@ -1,12 +1,55 @@
 # Usefull command : 
 
+## Few tools you need before installing anything
+
+### If you need **php** dependencies
+
+#### For *Linux*
+
+```bash
+sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
+```
+#### For *MacOS*
+
+```bash
+brew install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
+```
+
+### If you need **composer**
+
+#### For *Linux*
+
+```bash
+sudo apt-get install composer
+```
+
+#### For *MacOs*
+
+```bash
+brew install composer
+```
+
+### If you need **yarn**
+
+#### For *Linux*
+
+```bash
+sudo apt-get install yarn
+```
+
+#### For *MacOs*
+
+```bash
+brew install yarn
+```
+
 ## to install all the dependencies
 
 ```bash
 make install
 ```
 
-(you maybe need to install yarn)
+> You maybe need some previous installation, like **composer** or **yarn**
 
 ## to compile your asset 
 
