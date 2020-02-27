@@ -4,6 +4,6 @@ twig:
     strict_variables: '%kernel.debug%'
     globals:
         main_menu:
-            - { label: 'label.menu', route: '' }
-            - { label: 'label.menu', route: '' }
-            - { label: 'label.menu', route: '' }
+            - { label: 'label.menu', route: 'home' }
+            - { label: 'label.menu', route: 'home' }
+            - { label: 'label.menu', route: 'home' }

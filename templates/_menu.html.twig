@@ -2,7 +2,7 @@
     {% for link in main_menu %}
         <li>
             <a href="{{ url(link.route) }}" {% if link.route == active %}class="active"{% endif %}>
-                {{ link.label | trans }}
+                {{ link.label }}
             </a>
         </li>
     {% endfor %}
