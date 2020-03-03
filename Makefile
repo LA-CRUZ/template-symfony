@@ -15,7 +15,6 @@ cc :
 .PHONY: cc
 
 install :
-	composer update
 	composer install
 	yarn install
 .PHONY: install
