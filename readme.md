@@ -1,28 +1,76 @@
-# Install
+# Usefull command : 
 
-change .env in env.local and change this.
+## Few tools you need before installing anything
+
+### If you need **php** dependencies
+
+#### For *Linux*
+
+```bash
+sudo apt install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
 ```
-DATABASE_URL=mysql://root:root@db/your_bd
+#### For *MacOS*
+
+```bash
+brew install php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
 ```
 
-```
-cd my_project
-cd docker-symfony
-docker-compose up
-```
-in another tab of your console.
-⚠ for use a PHP version of container.
-```
-docker-compose exec php /bin/sh
-composer install
-```
-you'll find the symfony website in http://localhost:8888/
-and phpmyadmin in http://localhost:8080/ 
+### If you need **composer**
 
+#### For *Linux*
 
-it's ready 😀
-
-for stop server :
+```bash
+sudo apt-get install composer
 ```
-docker-compose stop
+
+#### For *MacOs*
+
+```bash
+brew install composer
+```
+
+### If you need **yarn**
+
+#### For *Linux*
+
+```bash
+sudo apt-get install yarn
+```
+
+#### For *MacOs*
+
+```bash
+brew install yarn
+```
+
+## to install all the dependencies
+
+```bash
+make install
+```
+
+> You maybe need some previous installation, like **composer** or **yarn**
+
+## to compile your asset 
+
+```bash
+make encore
+```
+
+and if you want Webpack encore to listen to your change
+
+```bash
+make encore-watch
+```
+
+## to start a server
+
+```bash
+make server
+```
+
+## to clear symfony cache
+
+```bash
+make cc
 ```
